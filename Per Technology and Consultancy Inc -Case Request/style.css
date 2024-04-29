@@ -1,0 +1,9 @@
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%); /* Ok simgelerini siyah yapar */
+}
+
+.form-control:focus{
+    border: none;
+    box-shadow: none;
+}
