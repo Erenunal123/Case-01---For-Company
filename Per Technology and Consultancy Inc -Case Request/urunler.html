@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+    <!-- BOOTSTRAP CDN START -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- BOOTSTRAP CDN FINISH -->
+
+    <link rel=”stylesheet” type=”text/css” href="./style.css" />
+</head>
+
+<body>
+    <main>
+
+        <!-- MENÜ ALANI - BAŞLANGIÇ -->
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg bg-warning -tertiary shadow">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html">TEKNO-MAR</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Anasayfa</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Ürünlerimiz</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="iletisim.html">İletişim</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <input type="text" id="aramaKutusu" placeholder="Ürün ara..." class="form-control me-2">
+                                <button type="button" class="btn btn-danger" onclick="searchProducts()">Ara</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- MENÜ ALANI - BİTİŞ -->
+
+
+        <!-- İçerik Alanı Başlangıç -->
+        <div class="container" id="products" style="margin-top: 5%;">
+
+            <div class="row p-2" style="margin-left: 10%;">
+
+                <div class="card m-2" style="width: 18rem;">
+                    <img src="img/computer/Asus Notebook Laptop, UX3402ZA-KP632W WUXGA, i5-1240P İşlemci, 8 GB RAM, 512 SSD, Share, Win11, NUmPAD, Evo.jpg"
+                        class="card-img-top" alt="..." width="200px" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Asus Notebook Laptop</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center bg-body" style="border: none;">
+                        <!-- Buton -->
+                        <a href="#" class="btn btn-danger">Sepete Ekle</a>
+                    </div>
+                </div>
+
+                <div class="card m-2" style="width: 18rem;">
+                    <img src="img/computer/Asus ROG Strix G15 G513RC-HN192 Ryzen 7 6800H 16GB RAM 512GB SSD 4GB RTX3050 15.6 inç FHD 144Hz.jpg"
+                        class="card-img-top" alt="..." width="200px" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Asus Rog Strix G15</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center bg-body" style="border: none;">
+                        <!-- Buton -->
+                        <a href="#" class="btn btn-danger">Sepete Ekle</a>
+                    </div>
+                </div>
+
+                <div class="card m-2" style="width: 18rem;">
+                    <img src="img/computer/Casper Nirvana C370 Intel Celeron N4020 4C00B.webp" class="card-img-top"
+                        alt="..." width="200px" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Casper Nirvana C370</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center bg-body" style="border: none;">
+                        <!-- Buton -->
+                        <a href="#" class="btn btn-danger">Sepete Ekle</a>
+                    </div>
+                </div>
+
+                <div class="card m-2" style="width: 18rem;">
+                    <img src="img/phone/Asus Zenfone 6.JPG" class="card-img-top" alt="..." width="200px" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Asus Zenfone 6</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center bg-body" style="border: none;">
+                        <!-- Buton -->
+                        <a href="#" class="btn btn-danger">Sepete Ekle</a>
+                    </div>
+                </div>
+                <div class="card m-2" style="width: 18rem;">
+                    <img src="img/phone/Asus Zenfone 7.JPG" class="card-img-top" alt="..."  width="200px" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Asus Zenfone 7</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center bg-body" style="border: none;">
+                        <!-- Buton -->
+                        <a href="#" class="btn btn-danger">Sepete Ekle</a>
+                    </div>
+                </div>
+
+                <div class="card m-2" style="width: 18rem;">
+                    <img src="img/phone/Iphone 14 Pro Max.JPG" class="card-img-top" alt="..." width="200px" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Iphone 14 Pro Max</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center bg-body" style="border: none;">
+                        <!-- Buton -->
+                        <a href="#" class="btn btn-danger">Sepete Ekle</a>
+                    </div>
+                </div>
+
+                <div class="card m-2" style="width: 18rem;">
+                    <img src="img/television/LG OLED83M39 83 210 Ekran 4K UHD Webos OLED TV.JPG" class="card-img-top"
+                        alt="..." width="200px" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">LG OLED83M39 8</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center bg-body" style="border: none;">
+                        <!-- Buton -->
+                        <a href="#" class="btn btn-danger">Sepete Ekle</a>
+                    </div>
+                </div>
+
+                <div class="card m-2" style="width: 18rem;">
+                    <img src="img/television/Philips Ambilight TV 43PUS810862 43''(108 cm) 4K UHD Dolby Vision, Dolby Atmos, Smart TV .jpg"
+                        class="card-img-top" alt="..." width="200px" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Philips Ambilight TV</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center bg-body" style="border: none;">
+                        <!-- Buton -->
+                        <a href="#" class="btn btn-danger">Sepete Ekle</a>
+                    </div>
+                </div>
+                <div class="card m-2" style="width: 18rem;">
+                    <img src="img/television/Toshiba 55QL5D63DT 55 QLED SMART LED TV .jpg" class="card-img-top"
+                        alt="..." width="200px" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Toshiba LED TV</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center bg-body" style="border: none;">
+                        <!-- Buton -->
+                        <a href="#" class="btn btn-danger">Sepete Ekle</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- İçerik Alanı Bitiş -->
+
+        <h3 id="urunBulunamadiUyari" style="display: none;" class="text-center text-secondary">Ürün bulunamadı.</h3>
+
+        <!-- Kullanılmayan Alan Başlangıç -->
+        <div style="height: 200px;"></div>
+        <!-- Kullanılmayan Alan Bitiş -->
+
+
+        <!-- Bottom Alanı Başlangıç -->
+        <div class="container-fluid bg-secondary p-3 bg-dark text-light text-center">
+            <li>Tekno-Mar Copyright © 2024 tüm hakları saklıdır</li>
+        </div>
+        <!-- Bottom Alanı Bitiş -->
+    </main>
+
+
+    <script src="jsfile.js"></script>
+    <!-- BOOTSTRAP CDN START -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP CDN FINISH -->
+</body>
+
+</html>
